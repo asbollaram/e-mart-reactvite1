@@ -10,6 +10,7 @@ import WomenFushionPage from './e-Mart/pages/WomenFushionPage';
 import FurnituresPage from './e-Mart/pages/FurnituresPage';
 import AirConditionPage from './e-Mart/pages/AirConditionPage';
 import KitchenPage from './e-Mart/pages/KitchenPage';
+import CartProductDetails from './detailscart/CartProductDetails';
 
 function App() {
   return (
@@ -25,8 +26,8 @@ function App() {
           <Route path="/furniture" element={<FurnituresPage />} />
           <Route path="/ac" element={<AirConditionPage />} />
           <Route path="/kitchen" element={<KitchenPage />} />
+          <Route path="/mobile/:id" element={<CartProductDetails />} />
         </Routes>
-        {/* <LandingPage /> */}
       </div>
     </>
   );

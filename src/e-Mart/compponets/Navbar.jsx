@@ -18,34 +18,36 @@ const Navbar = () => {
           <div className="cart">Cart</div>
         </div>
       </div>
-      <div className="menuBar">
-        <ul>
-          <li>
-            <Link to="/mobile">Mobile</Link>
-          </li>
+      <div className="NavbarContainer">
+        <div className="menuBar">
+          <ul>
+            <li>
+              <Link to="/mobile">Mobile</Link>
+            </li>
 
-          <li>
-            <Link to="/computers">Computer</Link>
-          </li>
-          <li>
-            <Link to="/menfashion">Men Fashion</Link>
-          </li>
-          <li>
-            <Link to="/womanfashion">Woman Dress</Link>
-          </li>
-          <li>
-            <Link to="/watches">Watches</Link>{' '}
-          </li>
-          <li>
-            <Link to="/kitchen">Kitchen</Link>
-          </li>
-          <li>
-            <Link to="/furniture">Furniture</Link>
-          </li>
-          <li>
-            <Link to="/ac">Ac</Link>
-          </li>
-        </ul>
+            <li>
+              <Link to="/computers">Computer</Link>
+            </li>
+            <li>
+              <Link to="/menfashion">Men Fashion</Link>
+            </li>
+            <li>
+              <Link to="/womanfashion">Woman Dress</Link>
+            </li>
+            <li>
+              <Link to="/watches">Watches</Link>{' '}
+            </li>
+            <li>
+              <Link to="/kitchen">Kitchen</Link>
+            </li>
+            <li>
+              <Link to="/furniture">Furniture</Link>
+            </li>
+            <li>
+              <Link to="/ac">Ac</Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </>
   );
