@@ -14,6 +14,11 @@ import CartProductDetails from './detailscart/CartProductDetails';
 import UserCart from './e-Mart/UserCart';
 import MenAddtoCartDetails from './detailscart/MenAddtoCartDetails';
 import WomenAddtoCartDetails from './detailscart/WomenAddtoCartDetails';
+import ComputerCartDetails from './detailscart/ComputerCartDetails';
+import WatchesCartDetails from './detailscart/WatchesCartDetails';
+import KitchenCartDetails from './detailscart/KitchenCartDetails';
+import FurnituresCartDetails from './detailscart/FurnituresCartDetails';
+import AcCartDetails from './detailscart/AcCartDetails';
 
 function App() {
   return (
@@ -33,6 +38,11 @@ function App() {
           <Route path="/cart" element={<UserCart />} />
           <Route path="/men/:id" element={<MenAddtoCartDetails />} />
           <Route path="/woman/:id" element={<WomenAddtoCartDetails />} />
+          <Route path="/computer/:id" element={<ComputerCartDetails />} />
+          <Route path="/watches/:id" element={<WatchesCartDetails />} />
+          <Route path="/kitchen/:id" element={<KitchenCartDetails />} />
+          <Route path="/furniture/:id" element={<FurnituresCartDetails />} />
+          <Route path="/ac/:id" element={<AcCartDetails />} />
         </Routes>
       </div>
     </>
