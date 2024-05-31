@@ -11,6 +11,7 @@ import FurnituresPage from './e-Mart/pages/FurnituresPage';
 import AirConditionPage from './e-Mart/pages/AirConditionPage';
 import KitchenPage from './e-Mart/pages/KitchenPage';
 import CartProductDetails from './detailscart/CartProductDetails';
+import UserCart from './e-Mart/UserCart';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/ac" element={<AirConditionPage />} />
           <Route path="/kitchen" element={<KitchenPage />} />
           <Route path="/mobile/:id" element={<CartProductDetails />} />
+          <Route path="/cart" element={<UserCart />} />
         </Routes>
       </div>
     </>

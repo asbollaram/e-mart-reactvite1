@@ -2,10 +2,12 @@ import React from 'react';
 import { mobileData } from '../assets/data/mobiles';
 import { useParams } from 'react-router-dom';
 import Navbar from '../e-Mart/compponets/Navbar';
+import { useCart } from '../e-Mart/contextCart/ContextCart';
 
 const CartProductDetails = () => {
   const { id } = useParams();
 
+  const { addToCart, cartItems } = useCart();
   const product = mobileData.find((item) => item.id === id);
 
   console.log(id);
@@ -22,7 +24,7 @@ const CartProductDetails = () => {
           </div>
           <div className="rightdis">
             <div className="cartName  space">
-              <h3>{product.company}</h3>
+              <h1>{product.company}</h1>
             </div>
             <div className="cartModel space">
               <h3>{product.model}</h3>
@@ -32,7 +34,9 @@ const CartProductDetails = () => {
             </div>
             <div className="cartDisc space">
               <p>{product.description}</p>
-              <button className="cartButton">Add to Cart</button>
+              <button className="cartButton" onClick={() => addToCart(product)}>
+                Add to Cart
+              </button>
             </div>
           </div>
         </div>

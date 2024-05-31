@@ -102,7 +102,7 @@
 }
 .mpageSction {
   display: grid;
-  grid-template-columns: repeat(4, 278px);
+  grid-template-columns: repeat(3, 285px);
   gap: 10px;
 }
 .imageDetails {
@@ -118,12 +118,30 @@
   border-radius: 5px;
   margin-bottom: 15px;
 }
+.pageImg {
+  border: 1px solid #e1e1e1;
+  width: 95%;
+  border-radius: 5px;
+  padding: 5px;
+}
+.pageImg img {
+  width: 100%;
+}
 .imgPage img {
   width: 100%;
 }
 .disCription {
   display: flex;
   justify-content: space-between;
+  width: 98%;
+}
+.disCription div {
+  display: block;
+  width: 100%;
+}
+.priced {
+  text-align: right;
+  align-items: center;
 }
 .price {
   font-weight: bold;
@@ -151,7 +169,10 @@
   margin: 25px 0px;
 }
 .rightdis {
-  padding: 25px 0px;
+  padding: 0px 0px 25px;
+}
+.cartName h1 {
+  font-weight: 500;
 }
 .space {
   margin: 10px;
@@ -161,18 +182,101 @@
   border: none;
   background-color: #09b850;
   padding: 3px 15px 5px;
-  margin: 10px 0px;
+  margin: 30px 0px 0px;
   font-size: 1.5rem;
   color: white;
-  border-radius: 25px;
+  border-radius: 5px;
+  width: 100%;
 }
 .cartButton:hover {
   background-color: #0cbc87;
 }
 
 .cartImage {
-  width: 25%;
+  width: 50%;
+}
+.cartImage img {
+  width: 100%;
 }
 .rightdis {
   width: 75%;
+}
+.ProductPageContainer {
+  display: flex;
+  width: 1140px;
+  margin: 0px auto;
+}
+.leftFiletdata {
+  padding: 5px;
+  margin: 20px 20px 20px 0px;
+  border: 1px solid #e1e1e1;
+  width: 25%;
+  border-radius: 5px;
+}
+.checkBox label {
+  margin: 5px 0px;
+  display: block;
+}
+.checkBox label .checkBox {
+  margin: 0px 5px;
+}
+.cart a {
+  text-decoration: none;
+  color: #fff;
+}
+.cart a span {
+  background-color: #ffffff;
+  border-radius: 100%;
+  padding: 6px 8px;
+  border: 1px solid #baf5d1;
+  color: #121313;
+  position: relative;
+  top: 2px;
+  left: 3px;
+}
+
+.cartItemsProducts {
+  display: flex;
+}
+.cartItems {
+  padding: 10px 0px;
+  margin: 15px 0px;
+  display: flex;
+  border-top: 1px solid #e9f7f3;
+  border-bottom: 1px solid #e9f7f3;
+  justify-content: space-between;
+  background-color: #f8f8f9;
+}
+.cartimages {
+  width: 150px;
+}
+.cartimages img {
+  width: 100%;
+}
+.cartimageDis {
+  width: 50%;
+}
+.cartpname {
+  padding: 10px;
+}
+.cartpname h5 {
+  padding: 3px 10px;
+  background-color: #0cbc87;
+  border-radius: 3px;
+}
+.leftCartDetails {
+  width: 75%;
+}
+.rightCart {
+  width: 22%;
+  padding: 10px;
+  margin: 15px 10px;
+  background-color: #e1e1e1;
+}
+.removeCart button {
+  background-color: rgb(243, 90, 90);
+  padding: 10px;
+  margin: 15px 10px;
+  border: none;
+  border-radius: 5px;
 }

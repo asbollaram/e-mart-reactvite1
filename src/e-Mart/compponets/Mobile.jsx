@@ -1,6 +1,5 @@
 import React from 'react';
 import { mobileData } from '../../assets/data/mobiles';
-console.log(mobileData);
 
 const Mobile = () => {
   const firstImage = mobileData.slice(0, 5);
