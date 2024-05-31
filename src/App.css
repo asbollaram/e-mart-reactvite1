@@ -212,6 +212,7 @@
   border: 1px solid #e1e1e1;
   width: 25%;
   border-radius: 5px;
+  height: 60vh;
 }
 .checkBox label {
   margin: 5px 0px;
@@ -220,6 +221,7 @@
 .checkBox label .checkBox {
   margin: 0px 5px;
 }
+
 .cart a {
   text-decoration: none;
   color: #fff;
@@ -279,4 +281,15 @@
   margin: 15px 10px;
   border: none;
   border-radius: 5px;
+}
+.cartItemsContainer {
+  margin: 0px auto;
+  width: 1140px;
+}
+.cartItemsContainer h1 {
+  font-weight: 500;
+  margin: 25px 0px;
+}
+.cartItemsProducts {
+  border-top: 1px solid #e7e6e6;
 }

@@ -12,6 +12,8 @@ import AirConditionPage from './e-Mart/pages/AirConditionPage';
 import KitchenPage from './e-Mart/pages/KitchenPage';
 import CartProductDetails from './detailscart/CartProductDetails';
 import UserCart from './e-Mart/UserCart';
+import MenAddtoCartDetails from './detailscart/MenAddtoCartDetails';
+import WomenAddtoCartDetails from './detailscart/WomenAddtoCartDetails';
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
           <Route path="/kitchen" element={<KitchenPage />} />
           <Route path="/mobile/:id" element={<CartProductDetails />} />
           <Route path="/cart" element={<UserCart />} />
+          <Route path="/men/:id" element={<MenAddtoCartDetails />} />
+          <Route path="/woman/:id" element={<WomenAddtoCartDetails />} />
         </Routes>
       </div>
     </>

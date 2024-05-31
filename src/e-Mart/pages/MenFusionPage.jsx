@@ -24,7 +24,7 @@ const MenFusionPage = () => {
       <Navbar />
       <div className="ProductPageContainer">
         <div className="leftFiletdata">
-          {filtermenProduct.map((mfusion) => {
+          {menData.map((mfusion) => {
             return (
               <div className="checkBox">
                 <label>
@@ -47,11 +47,11 @@ const MenFusionPage = () => {
             <h3>Men Fusion</h3>
           </div>
           <div className="mpageSction">
-            {menData.map((item) => {
+            {filtermenProduct.map((item) => {
               return (
                 <>
                   <div className="imageDetails">
-                    <Link to="">
+                    <Link to={`/men/${item.id}`}>
                       <div className="imgPage">
                         <img src={item.image} alt="men fushion" />
                       </div>
