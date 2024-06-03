@@ -1,5 +1,6 @@
 import React from 'react';
 import { kitchenData } from '../../assets/data/kitchen';
+import { Link } from 'react-router-dom';
 
 const Kitchen = () => {
   const firstImage = kitchenData.slice(0, 5);
@@ -11,9 +12,11 @@ const Kitchen = () => {
       <div className="mobileSection">
         {firstImage.map((item) => {
           return (
-            <div className="imgDetails">
-              <img src={item.image} alt="Computer images" />
-            </div>
+            <Link to="/kitchen">
+              <div className="imgDetails">
+                <img src={item.image} alt="Computer images" />
+              </div>
+            </Link>
           );
         })}
       </div>

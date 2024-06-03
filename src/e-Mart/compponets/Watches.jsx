@@ -1,5 +1,6 @@
 import React from 'react';
 import { watchData } from '../../assets/data/watch';
+import { Link } from 'react-router-dom';
 console.log(watchData);
 
 const Watches = () => {
@@ -12,9 +13,11 @@ const Watches = () => {
       <div className="mobileSection">
         {firstImage.map((item) => {
           return (
-            <div className="imgDetails">
-              <img src={item.image} alt="" />
-            </div>
+            <Link to="/watches">
+              <div className="imgDetails">
+                <img src={item.image} alt="" />
+              </div>
+            </Link>
           );
         })}
       </div>

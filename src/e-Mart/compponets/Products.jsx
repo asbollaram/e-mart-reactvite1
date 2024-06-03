@@ -7,6 +7,7 @@ import WomenDress from './WomenDress';
 import Furnitures from './Furnitures';
 import Aircondition from './Aircondition';
 import Kitchen from './Kitchen';
+import { Link } from 'react-router-dom';
 
 const Products = () => {
   return (

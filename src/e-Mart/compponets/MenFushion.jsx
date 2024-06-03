@@ -1,5 +1,6 @@
 import React from 'react';
 import { menData } from '../../assets/data/men';
+import { Link } from 'react-router-dom';
 console.log(menData);
 
 const MenFushion = () => {
@@ -12,9 +13,11 @@ const MenFushion = () => {
       <div className="mobileSection">
         {firstimage.map((item) => {
           return (
-            <div className="imgDetails">
-              <img src={item.image} alt="image" />
-            </div>
+            <Link to="/menfashion">
+              <div className="imgDetails">
+                <img src={item.image} alt="image" />
+              </div>
+            </Link>
           );
         })}
       </div>

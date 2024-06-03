@@ -1,5 +1,6 @@
 import React from 'react';
 import { mobileData } from '../../assets/data/mobiles';
+import { Link } from 'react-router-dom';
 
 const Mobile = () => {
   const firstImage = mobileData.slice(0, 5);
@@ -11,9 +12,11 @@ const Mobile = () => {
       <div className="mobileSection">
         {firstImage.map((item) => {
           return (
-            <div className="imgDetails">
-              <img src={item.image} alt="Mobile images" />
-            </div>
+            <Link to="/mobile">
+              <div className="imgDetails">
+                <img src={item.image} alt="Mobile images" />
+              </div>
+            </Link>
           );
         })}
       </div>

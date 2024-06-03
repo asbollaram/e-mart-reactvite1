@@ -1,5 +1,6 @@
 import React from 'react';
 import { acData } from '../../assets/data/ac';
+import { Link } from 'react-router-dom';
 console.log(acData);
 
 const Aircondition = () => {
@@ -12,9 +13,11 @@ const Aircondition = () => {
       <div className="mobileSection">
         {firstimage.map((item) => {
           return (
-            <div className="imgDetails">
-              <img src={item.image} alt="Computer images" />
-            </div>
+            <Link to="/ac">
+              <div className="imgDetails">
+                <img src={item.image} alt="Computer images" />
+              </div>
+            </Link>
           );
         })}
       </div>

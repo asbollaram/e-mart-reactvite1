@@ -19,6 +19,7 @@ import WatchesCartDetails from './detailscart/WatchesCartDetails';
 import KitchenCartDetails from './detailscart/KitchenCartDetails';
 import FurnituresCartDetails from './detailscart/FurnituresCartDetails';
 import AcCartDetails from './detailscart/AcCartDetails';
+import Footer from './e-Mart/pages/Footer';
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
           <Route path="/furniture/:id" element={<FurnituresCartDetails />} />
           <Route path="/ac/:id" element={<AcCartDetails />} />
         </Routes>
+        <Footer />
       </div>
     </>
   );
